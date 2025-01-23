@@ -4,14 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Inthiyaz Resume</title>
+    <meta property="og:title" content="Inthiyaz">
+    <meta property="og:description" content="I am a Frontend Developer in Trangla">
+    <meta property="og:image" content="dp1.jpg">
     <style>
+       
+        body {
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
         #border {
-            margin: auto;
+            margin: 20px auto;
             border: 3px solid black;
             padding: 40px;
             max-width: 800px;
+            background-color: #fff;
             box-sizing: border-box;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .bule {
@@ -20,7 +34,12 @@
 
         hr {
             border: 2px solid black;
-            padding-right: 300px;
+            margin: 10px 0;
+            width: 60%;
+        }
+
+        h2 {
+            margin: 10px 0;
         }
 
         span {
@@ -48,10 +67,32 @@
             text-decoration: underline;
         }
 
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            #border {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-size: 1rem;
+            }
+
+            p, ul {
+                font-size: 0.95rem;
+            }
+
+            a {
+                font-size: 0.95rem;
+            }
+        }
+
         @media (max-width: 600px) {
             #border {
-                padding: 10px;
-                border-width: 2px;
+                padding: 15px;
             }
 
             h2 {
@@ -59,16 +100,21 @@
             }
 
             span {
-                font-size: 1rem;
+                font-size: 0.95rem;
             }
 
-            p,
-            ul {
-                font-size: 0.9rem;
+            p, ul {
+                font-size: 0.85rem;
             }
 
             a {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            hr {
+                width: 25%;
             }
         }
 
@@ -81,33 +127,35 @@
                 font-size: 0.9rem;
             }
 
-            p,
-            ul {
+            p, ul {
                 font-size: 0.8rem;
             }
 
             a {
                 font-size: 0.8rem;
-                display: block;
-                margin-bottom: 5px;
+            }
+
+            #border {
+                padding: 10px;
+            }
+
+            hr {
+                width: 30%;
             }
         }
     </style>
 </head>
 
 <body>
-
-
     <div id="border">
         <div>
-            <hr align="left" width="15%" hight="2px">
+            <hr>
         </div>
-        <!-- <h1>__________________________________</h1> -->
-
         <h2>Shaik Inthiyaz</h2>
         <span>Junior Frontend Developer</span>
-        <p>Bilalnagar 1st line <br>
-            Ongole ST:523001 <br>
+        <p>
+            Bilalnagar 1st line <br>
+            Ongole ST: 523001 <br>
             7729844661 <br>
             skinthiyaz123@gmail.com
         </p>
@@ -118,22 +166,18 @@
             Technical Writing, Presentation
         </p>
 
-        <span>Education</span> <br><br>
-        <span class="bule">
-            NRI Institute of Technology, Visadala - M.C.A </span>
+        <span>Education</span>
+        <br>
+        <span class="bule">NRI Institute of Technology, Visadala - M.C.A</span>
         <p>
             July 2023 to July 2025 <br>
-            Working on a brain hemorrhage detection project
+            Working on a brain hemorrhage Detection Project
         </p>
 
         <span>Experience</span> <br>
 
-        <span class="bule">
-            Company Name, Location - Job Title
-        </span>
-        <p>
-            Month 2021 to Month 2025
-        </p>
+        <span class="bule">Company Name, Location - Job Title</span>
+        <p>Month 2021 to Month 2025</p>
         <ul>
             <li>List of achievements</li>
             <li>List of achievements</li>
@@ -141,12 +185,8 @@
         </ul>
         <p>Skills: List of skills gained at this company</p>
 
-        <span class="bule">
-            Company Name, Location - Job Title
-        </span>
-        <p>
-            Month 2021 to Month 2025
-        </p>
+        <span class="bule">Company Name, Location - Job Title</span>
+        <p>Month 2021 to Month 2025</p>
         <ul>
             <li>List of achievements</li>
             <li>List of achievements</li>
@@ -156,9 +196,7 @@
 
         <span>Across the Internet</span><br>
         <a href="https://in.linkedin.com/">LinkedIn</a>
-        <br>
         <a href="https://github.com/">GitHub</a>
-
     </div>
 </body>
 
